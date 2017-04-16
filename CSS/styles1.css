@@ -1,0 +1,129 @@
+/*commun*/
+/*to do: avoir border (dégradé) de chaque coté de body*/
+html{
+	background: -webkit-linear-gradient(top, #00FFDD, black); /*Chrome, Safari*/
+	background: -o-linear-gradient(bottom, #00FFDD, black); /*Opera*/
+	background: -moz-linear-gradient(bottom, #00FFDD, black); /*Mozilla, Firefox*/
+	background: linear-gradient(to bottom, #00FFDD, black);
+	background-repeat: no-repeat;
+}
+
+.contenu{
+	width:70%;
+	margin: auto;
+	background: rgba(0,0,0,0.8);
+	border-radius: 15px;
+}
+
+body{
+	/*width:*/
+	padding: 0px;
+	/*border*/
+	margin: auto; /*top,right,bot,left OR top/bot,right/left*/
+	color: white;
+}
+
+h1{
+	width: 90%;
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	text-shadow: 4px 3px 3px gray;
+}
+
+h2{
+	padding-left: 40px;
+}
+
+p{
+	font-size: 18px;
+	/*font-family: ;*/
+}
+
+/*decaler article vers droite*/
+article{
+	padding-left: 200px;
+}
+
+/*links*/
+a:link{
+	color: #01D81D;
+}
+
+a:visited{
+	color: #009815;
+}
+
+a:hover{
+	color: #01FE23;
+}
+
+/*footer (copyright + joindre)*/
+.footer{
+	padding: 5px;
+	width: 80%;
+	bottom: 0px;
+	text-align: center;
+	color: white;
+}
+
+/*barre menu*/
+/*to do: faire que go jusqu'au top*/
+.menu{
+	position: fixed;
+	padding: 20px 15px 20px 15px;
+	border: 1px dotted gray;
+	border-top: none;
+	height: 100%;
+	left: 15%;
+	list-style-type: none;
+	font-size: 16px;
+	/*font-family: ;*/
+}
+
+
+/*page accueil: news*/
+.news{
+	padding: 15px;
+	border: 2px dotted gray;
+	margin: 15px;
+	border-radius: 5px;
+	width: 80%;
+}
+
+.news p{
+	margin:0px;
+}
+
+.newstext{
+	padding-left: 10px;
+}
+
+#img-defile{
+	width: 200px;
+}
+
+
+/*page historique*/
+.hist{
+	padding: 0px 20px 20px 20px;
+}
+
+
+/*page employés: tableau employés*/
+table{
+	border-collapse: collapse;
+}
+
+th, td{
+	border: 1px solid gray;
+	padding: 8px;
+}
+
+.nom{
+	text-align: center;
+}
+
+/*photos employés*/
+.pemployes{
+	width: 75px;
+}

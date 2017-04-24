@@ -1,5 +1,4 @@
-/*commun*/
-/*to do: avoir border (dégradé) de chaque coté de body*/
+/*commun à toutes les pages*/
 html{
 	background: -webkit-linear-gradient(top, #00FFDD, black); /*Chrome, Safari*/
 	background: -o-linear-gradient(bottom, #00FFDD, black); /*Opera*/
@@ -23,87 +22,99 @@ body{
 	color: white;
 }
 
+::selection{
+	background-color: green;
+}
+
+/*en-tête*/
 h1{
 	width: 90%;
 	font-family: 'Orbitron', sans-serif;
 	text-align: center;
 	text-shadow: 4px 3px 3px gray;
 }
-
+/*autres titres*/
 h2{
 	padding-left: 40px;
 }
-
 h3{
 	text-align: center;
 }
-
+/*textes*/
 p{
 	font-size: 18px;
 	/*font-family: ;*/
 }
 
-/*decaler article vers droite*/
+/*décaler <article> vers la droite*/
 article{
 	padding-left: 200px;
 }
 
-/*links*/
-a:link{
-	color: #01D81D;
-	text-decoration: none;
-}
-
-a:visited{
-	color: #009815;
-	text-decoration: none;
-}
-
-a:hover{
-	color: #01FE23;
-}
-
-a:active{
-	text-decoration: underline;
-}
-
-/*footer (copyright + joindre)*/
-.footer{
-	padding: 5px;
-	width: 80%;
-	bottom: 0px;
-	text-align: center;
-	color: white;
-}
-
-/*logo
-#logo{
-
-}
-*/
 
 /*barre menu*/
 /*to do: faire que go jusqu'au top*/
 .menu{
 	position: fixed;
+	height: 100%;
 	padding: 20px 15px 20px 15px;
 	border: 1px dotted gray;
 	border-top: none;
-	height: 100%;
 	left: 15%;
 	list-style-type: none;
 	font-size: 16px;
 	/*font-family: ;*/
 }
 
+/*logo menu accueil didnt work
+.logo-accueil{
+	background: url("IMAGES/logoRDM.png");
+}
+*/
 
-/*page accueil: news*/
-.news{
-	padding: 15px;
-	border: 2px dotted gray;
-	margin: 15px;
-	border-radius: 5px;
+/*liens*/
+/*.actif{
+	color: #01FE23;
+}*/
+/*normal, pas visité*/
+a:link{
+	color: #01D81D;
+	text-decoration: none;
+}
+/*déjà visité*/
+a:visited{
+	color: #009815;
+	text-decoration: none;
+}
+/*curseur dessus*/
+a:hover{
+	color: #01FE23;
+}
+/*pendant le cliquage*/
+a:active{
+	text-decoration: underline;
+}
+
+/*pied de page (© + joindre)*/
+.footer{
 	width: 80%;
+	padding: 5px;
+	bottom: 0px;
+	text-align: center;
+}
+
+
+/*page accueil: nouvelles*/
+/*logo*/
+#logo{
+	width: 90%;
+}
+/*boîtes des parties nouvelles*/
+.news{
+	width: 80%;
+	padding: 15px;
+	border: 2px dotted gray;border-radius: 5px;
+	margin: 15px;
 }
 
 .news p{
@@ -114,14 +125,34 @@ a:active{
 	padding-left: 10px;
 }
 
+/*to do: mettre sous text*/
 #img-defile{
 	width: 200px;
 }
 
+#fictif{
+	width: 80%;
+	padding: 4px;
+	text-align: center;
+}
+
+mark{
+	background-color: green;
+	color: white;
+}
 
 /*page historique*/
+/*to do: animation->apparait 1 a 1
+ nouvelles options dans la barre menu*/
+.histobande{
+	
+}
+/*boîtes des parties d'historique*/
 .hist{
-	padding: 0px 20px 20px 20px;
+	/*padding: 0px 20px 20px 20px;*/
+	width: 80%;
+	padding: 15px;
+	margin: 15px;
 }
 
 
@@ -145,14 +176,18 @@ table{
 }
 
 th, td{
-	border: 1px solid gray;
 	padding: 8px;
+	border: 1px solid gray;
 }
 
 .nom{
 	text-align: center;
 }
 
+/*tableau employés*/
+#temployes{
+	margin: 15px;
+}
 /*photos employés*/
 .pemployes{
 	width: 75px;

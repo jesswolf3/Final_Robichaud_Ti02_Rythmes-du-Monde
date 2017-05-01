@@ -53,7 +53,8 @@ article{
 
 
 /*barre menu*/
-/*to do: faire que go jusqu'au top*/
+/*to do: faire que go jusqu'au top
+from side to top responsive design*/
 .menu{
 	position: fixed;
 	height: 100%;
@@ -153,6 +154,10 @@ mark{
 	width: 80%;
 	padding: 15px;
 	margin: 15px;
+}
+/*logos dans historique*/
+.logo-histo{
+	width: 70%;
 }
 
 

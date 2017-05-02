@@ -110,6 +110,13 @@ a:active{
 #logo{
 	width: 90%;
 }
+/*clientèle*/
+#clients{
+	/*padding: 0px 20px 20px 20px;*/
+	width: 80%;
+	padding: 15px;
+	margin: 15px;
+}
 /*boîtes des parties nouvelles*/
 .news{
 	width: 80%;
@@ -162,17 +169,24 @@ mark{
 
 
 /*page projets*/
-
-
-
-/*page services*/
-
-
-
-/*page clients*/
-#clients{
-	
+.projets{
+	/*padding: 0px 20px 20px 20px;*/
+	width: 80%;
+	padding: 15px;
+	margin: 15px;
 }
+
+
+/*page cours*/
+
+
+
+/*page inscriptions*/
+
+
+
+/*page boutique*/
+
 
 
 /*page employés: tableau employés*/
@@ -197,6 +211,14 @@ th, td{
 .pemployes{
 	width: 75px;
 }
+
+
+/*page partenaires d'affaires*/
+
+
+
+/*page fournisseurs*/
+
 
 
 /*page coordonnées/localisation*/

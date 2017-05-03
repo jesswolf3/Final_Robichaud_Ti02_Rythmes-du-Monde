@@ -37,7 +37,7 @@ h1{
 h2{
 	padding-left: 40px;
 }
-h3{
+h3, h4{
 	text-align: center;
 }
 /*textes*/
@@ -175,10 +175,40 @@ mark{
 	padding: 15px;
 	margin: 15px;
 }
+.IMGprojetjapon{
+	width: 45%;
+}
+.IMGprojetchine{
+	width: 70%;
+}
+.salles{
+	width: 50%;
+}
 
 
-/*page cours*/
-
+/*pages cours*/
+.cours{
+	/*padding: 0px 20px 20px 20px;*/
+	width: 80%;
+	padding: 15px;
+	margin: 15px;
+}
+/*+ d'alinea*/
+.defdanse{
+	/*padding: 0px 20px 20px 20px;*/
+	width: 80%;
+	padding: 15px;
+	margin: 15px;
+}
+.IMGcours1{
+	width: 45%;
+}
+.IMGcours{
+	width: 80%;
+}
+video{
+	width: 90%;
+}
 
 
 /*page inscriptions*/

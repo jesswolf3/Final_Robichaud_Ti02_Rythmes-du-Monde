@@ -1,4 +1,4 @@
-/*commun à toutes les pages*/
+/*commun à toutes les pages*/ /*1=blue/title ..3=yellow/subpart ..4=purple/delete? ..5=green/todo*/
 html{
 	background: -webkit-linear-gradient(top, #00FFDD, black); /*Chrome, Safari*/
 	background: -o-linear-gradient(bottom, #00FFDD, black); /*Opera*/
@@ -42,6 +42,10 @@ h3, h4{
 }
 /*textes*/
 p{
+	/*padding: 0px 20px 20px 20px;*/
+	width: 85%;
+	padding: 15px;
+	margin: 15px;
 	font-size: 18px;
 	/*font-family: ;*/
 }
@@ -50,7 +54,10 @@ p{
 article{
 	padding-left: 200px;
 }
-
+/*images sur nouvelle ligne*/
+img{
+	display: block;
+}
 
 /*barre menu*/
 /*to do: faire que go jusqu'au top
@@ -66,30 +73,36 @@ from side to top responsive design*/
 	font-size: 16px;
 	/*font-family: ;*/
 }
-
-/*logo menu accueil didnt work
+/*logo barre menu*/
 .logo-accueil{
-	background: url("IMAGES/logoRDM.png");
+	width: 120px;
 }
-*/
+/*to do: animation->apparait 1 a 1
+ nouvelles options dans la barre menu
+ accueil, histo, projet, annees, boutique*/
+.barre-anim{
+	
+}
+
 
 /*liens*/
-/*.actif{
-	color: #01FE23;
-}*/
-/*normal, pas visité*/
+/*page active*/
+.actif{
+	color: #009815 !important; /*#01FE23?*/
+}
+/*normal/pas visité*/
 a:link{
 	color: #01D81D;
 	text-decoration: none;
 }
 /*déjà visité*/
 a:visited{
-	color: #009815;
+	color: #01D81D; /*#009815*/
 	text-decoration: none;
 }
 /*curseur dessus*/
 a:hover{
-	color: #01FE23;
+	color: #01FE23; /*#01FE23*/
 }
 /*pendant le cliquage*/
 a:active{
@@ -97,70 +110,69 @@ a:active{
 }
 
 /*pied de page (© + nous joindre)*/
-.footer{
+footer{
 	width: 80%;
 	padding: 5px;
-	bottom: 0px;
+	margin-bottom: 20px;
+	font-size: 18px;
 	text-align: center;
 }
 
-
-/*page accueil: nouvelles*/
+/*page accueil*/
 /*logo*/
 #logo{
 	width: 90%;
 }
 /*clientèle*/
-#clients{
-	/*padding: 0px 20px 20px 20px;*/
+/*#clients{
+	/*padding: 0px 20px 20px 20px;
 	width: 80%;
 	padding: 15px;
 	margin: 15px;
-}
+}*/
 /*boîtes des parties nouvelles*/
 .news{
 	width: 80%;
 	padding: 15px;
-	border: 2px dotted gray;border-radius: 5px;
+	border: 2px dotted gray;
+	border-radius: 5px;
 	margin: 15px;
 }
-
 .news p{
-	margin:0px;
+	width: 95%;
+	margin: 0px;
 }
-
+.date{
+	padding: 0px;
+}
 .newstext{
-	padding-left: 10px;
+	padding: 0px 0px 0px 10px;
 }
-
-/*to do: mettre sous text*/
+/*to do: % but 200px max*/
 #img-defile{
 	width: 200px;
 }
-
 #fictif{
 	width: 80%;
 	padding: 4px;
 	text-align: center;
 }
-
 mark{
 	background-color: green;
 	color: white;
 }
 
 /*page historique*/
-/*to do: animation->apparait 1 a 1
- nouvelles options dans la barre menu*/
-.histobande{
-	
-}
 /*boîtes des parties d'historique*/
-.hist{
-	/*padding: 0px 20px 20px 20px;*/
+/*.hist{
+	/*padding: 0px 20px 20px 20px;
 	width: 80%;
 	padding: 15px;
 	margin: 15px;
+}*/
+/*photo fondateurs*/
+#fondateurs{
+	width: 90%;
 }
 /*logos dans historique*/
 .logo-histo{
@@ -169,31 +181,31 @@ mark{
 
 
 /*page projets*/
-.projets{
-	/*padding: 0px 20px 20px 20px;*/
+/*.projets{
+	/*padding: 0px 20px 20px 20px;
 	width: 80%;
 	padding: 15px;
 	margin: 15px;
-}
+}*/
 .IMGprojetjapon{
 	width: 45%;
 }
 .IMGprojetchine{
 	width: 70%;
 }
-.salles{
+.IMGsalles{
 	width: 50%;
 }
 
 
 /*pages cours*/
-.cours{
-	/*padding: 0px 20px 20px 20px;*/
+/*.cours{
+	/*padding: 0px 20px 20px 20px;
 	width: 80%;
 	padding: 15px;
 	margin: 15px;
-}
-/*+ d'alinea*/
+}*/
+/*todo: + d'alinea*/
 .defdanse{
 	/*padding: 0px 20px 20px 20px;*/
 	width: 80%;
@@ -201,10 +213,16 @@ mark{
 	margin: 15px;
 }
 .IMGcours1{
-	width: 45%;
+	width: 49%;
+	display: inline;
 }
 .IMGcours{
 	width: 80%;
+}
+/*doesnt work??*/
+.IMGcoursVert{
+	height: 20%;
+	display: block;
 }
 video{
 	width: 90%;

@@ -1,4 +1,4 @@
-/*commun à toutes les pages*/ /*1=blue/title ..3=yellow/subpart ..4=purple/delete? ..5=green/todo*/
+/*commun à toutes les pages*/
 html{
 	background: -webkit-linear-gradient(top, #00FFDD, black); /*Chrome, Safari*/
 	background: -o-linear-gradient(bottom, #00FFDD, black); /*Opera*/
@@ -9,9 +9,9 @@ html{
 
 .contenu{
 	width:70%;
+	border-radius: 15px;
 	margin: auto;
 	background: rgba(0,0,0,0.8);
-	border-radius: 15px;
 }
 
 body{
@@ -26,7 +26,7 @@ body{
 	background-color: green;
 }
 
-/*en-tête*/
+/*titre page*/
 h1{
 	width: 90%;
 	font-family: 'Orbitron', sans-serif;
@@ -75,7 +75,7 @@ from side to top responsive design*/
 }
 /*logo barre menu*/
 .logo-accueil{
-	width: 120px;
+	width: 150px;
 }
 /*to do: animation->apparait 1 a 1
  nouvelles options dans la barre menu
@@ -88,7 +88,7 @@ from side to top responsive design*/
 /*liens*/
 /*page active*/
 .actif{
-	color: #009815 !important; /*#01FE23?*/
+	color: #009815 !important;
 }
 /*normal/pas visité*/
 a:link{
@@ -97,12 +97,12 @@ a:link{
 }
 /*déjà visité*/
 a:visited{
-	color: #01D81D; /*#009815*/
+	color: #01D81D;
 	text-decoration: none;
 }
 /*curseur dessus*/
 a:hover{
-	color: #01FE23; /*#01FE23*/
+	color: #01FE23;
 }
 /*pendant le cliquage*/
 a:active{
@@ -130,7 +130,7 @@ footer{
 	padding: 15px;
 	margin: 15px;
 }*/
-/*boîtes des parties nouvelles*/
+/*boîtes des nouvelles*/
 .news{
 	width: 80%;
 	padding: 15px;
@@ -212,14 +212,17 @@ mark{
 	padding: 15px;
 	margin: 15px;
 }
+/*todo: +animation bigger hover*/
 .IMGcours1{
 	width: 49%;
 	display: inline;
 }
+/*todo: +animation bigger hover*/
 .IMGcours{
 	width: 80%;
 }
-/*doesnt work??*/
+/*doesnt work??
++animation bigger hover*/
 .IMGcoursVert{
 	height: 20%;
 	display: block;

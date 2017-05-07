@@ -50,7 +50,7 @@ p{
 	/*font-family: ;*/
 }
 
-/*décaler <article> vers la droite*/
+/*décale <article> vers la droite*/
 article{
 	padding-left: 200px;
 }
@@ -60,8 +60,8 @@ img{
 }
 
 /*barre menu*/
-/*to do: faire que go jusqu'au top
-from side to top responsive design*/
+/*to do: faire que go jusqu'au top---------
+from side to top responsive design----------*/
 .menu{
 	position: fixed;
 	height: 100%;
@@ -77,9 +77,9 @@ from side to top responsive design*/
 .logo-accueil{
 	width: 150px;
 }
-/*to do: animation->apparait 1 a 1
- nouvelles options dans la barre menu
- accueil, histo, projet, annees, boutique*/
+/*to do: animation->apparait 1 a 1-------------
+ nouvelles options dans la barre menu----------
+ accueil, histo, projet, annees, boutique----*/
 .barre-anim{
 	
 }
@@ -148,7 +148,7 @@ footer{
 .newstext{
 	padding: 0px 0px 0px 10px;
 }
-/*to do: % but 200px max*/
+/*to do: % but 200px max----------------------*/
 #img-defile{
 	width: 200px;
 }
@@ -205,23 +205,23 @@ mark{
 	padding: 15px;
 	margin: 15px;
 }*/
-/*todo: + d'alinea*/
+/*todo: + d'alinea---------------------------*/
 .defdanse{
 	/*padding: 0px 20px 20px 20px;*/
 	width: 80%;
 	padding: 15px;
 	margin: 15px;
 }
-/*todo: +animation bigger hover*/
+/*todo: +animation bigger hover-------------*/
 .IMGcours1{
 	width: 49%;
 	display: inline;
 }
-/*todo: +animation bigger hover*/
+/*todo: +animation bigger hover------------*/
 .IMGcours{
 	width: 80%;
 }
-/*doesnt work??
+/*doesnt work??----------------------------
 +animation bigger hover*/
 .IMGcoursVert{
 	height: 20%;
@@ -233,8 +233,18 @@ video{
 
 
 /*page inscriptions*/
-
-
+form{
+	/*padding: 0px 20px 20px 20px;*/
+	width: 75%;
+	padding: 15px;
+	margin: 15px;
+	font-size: 18px;
+	/*font-family: ;*/
+}
+/*doesnt work-------------------*/
+#choixcours{
+	list-style-type: none;
+}
 
 /*page boutique*/
 

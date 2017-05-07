@@ -46,63 +46,226 @@
 			<article>
 				<h2> Inscriptions </h2>
 				<p> Cliquez <a href="PDF/liste-cours.pdf" target="_blank">ici</a> pour voir la liste complète des cours offerts avec des détails supplémentaires pour les inscriptions, incluant les prix. </p>
+				<p> <strong>* Pour les inscriptions:</strong> si vous ne possédez pas de carte de crédit, vous devez vous présenter à notre réception. </p>
 				
+				<!--formulaire d'inscription-->
+				<h3> Formulaire d'inscription </h3>
 				<form method="post" action="traitement.php">
+					<!--section1: renseignements personnels-->
 					<fieldset>
-						<legend> Renseignements personnels sur la personne à inscrire: </legend>
-						<label for="prenom1"> Prénom: </label>
-						<input type="text" name="prenom1" id="prenom1" autofocus required> <br>
-						<label for="nom1"> Nom: </label>
-						<input type="text" name="nom1" id="nom1" required> <br>
-						<label for="naissance"> Date naissance: </label>
-						<input type="date" name="naissance" id="naissance" required> <br>
-						<label for="telephone"> Numéro de téléphone: </label>
-						<input type="tel" name="telephone" id="telephone"  placeholder="Ex: 450-378-3690" required> <br>
+						<legend> Renseignements personnels: </legend>
+						<label for="prenom1"> Prénom: </label> <br>
+						<input type="text" name="prenom1" id="prenom1" size="15" placeholder="Jenny" autofocus required> <br><br>
+						
+						<label for="nom1"> Nom: </label> <br>
+						<input type="text" name="nom1" id="nom1" size="15" placeholder="Greenleaf" required> <br><br>
+						
+						<label for="loisir"> Numéro de carte loisir: </label> <br>
+		<!--no.carte loisir:champs avec nb exacte de nb-->
+						<input type="text" name="loisir" id="loisir" maxlength="9" size="15" placeholder="001357869" required> <br><br>
+						
+						<label for="naissance"> Date naissance: </label> <br>
+						<input type="date" name="naissance" id="naissance" required> <br><br>
+						
+						<label for="telephone1"> Numéro de téléphone: </label> <br>
+		<!--tel:champs avec nb exacte de nb...for vs id supposed same-->
+						<input type="tel" name="telephone" id="telephone1"  maxlength="3" size="3" placeholder="450" required> 
+						<label for="telephone2"> - </label>
+						<input type="tel" name="telephone" id="telephone2"  maxlength="3" size="3" placeholder="378" required> 
+						<label for="telephone3"> - </label>
+						<input type="tel" name="telephone" id="telephone3"  maxlength="4" size="4" placeholder="3690" required> <br><br>
 						
 						<!--adresse-->
-						<label for="numero"> Numéro civic: </label>
-						<input type="number" name="numero" id="numero"  min="1" autocomplete="on" placeholder="Ex: 357" required> <br>
-						<label for="rue"> Rue: </label>
-						<input type="text" name="rue" id="rue" autocomplete="on" required> </br>
-						<label for="ville"> Ville: </label>
-						<input type="text" name="ville" id="ville" autocomplete="on" required> <br>
-						Province: 
+		<!--numero porte type number ou text-->
+						<label for="numero"> Numéro civique: </label> <br>
+						<input type="number" name="numero" id="numero"  min="1" autocomplete="on" placeholder="357" required> <br><br>
+						
+						<label for="rue"> Rue: </label> <br>
+						<input type="text" name="rue" id="rue" autocomplete="on" placeholder="rue Principale" required> </br><br>
+						
+						<label for="ville"> Ville: </label> <br>
+						<input type="text" name="ville" id="ville" autocomplete="on" placeholder="Granby" required> <br><br>
+						
+						Province: <br>
 						<select name="province">
-							<option value="Alberta">Alberta</option>
-							<option value="Colombie-Britannique">Colombie-Britannique</option>
-							<option value="Nouveau-Brunswick">Nouveau-Brunswick</option>
-							<option value="Nunavut">Nunavut</option>
 							<option value="Ontario">Ontario</option>
 							<option value="Québec" selected>Québec</option>
 						</select> <br>
-						<label for="postal"> Code postal: </label>
-			<!--postal code = type??-->
-						<input type="???" name="postal" id="postal" autocomplete="on" placeholder="Ex: J4M 4V4" required> <br>
-							
+						*Si vous résidez ailleurs, désolé, nos cours ne peuvent pas s'offrir à vous.<br><br>
 						
-						<label for="email"> Adresse email (optionel): </label>
-						<input type="email" name="mail" id="mail" autocomplete="on"> <br>
-						<label for="fidelite"> Nombre d'années dans <em>Rythmes du Monde (optionel):</em> </label>
-						<input type="number" name="fidelite" id="fidelite" min="0" max="7"> <br><br>
+						<label for="postal"> Code postal: </label> <br>
+		<!--postal code = type?? text? bon format-->
+						<input type="text" name="postal" id="postal" maxlength="7" size="7" autocomplete="on" placeholder="J4M 4V4" required> <br><br>
+						
+						<label for="email"> Adresse email (optionel): </label> <br>
+						<input type="email" name="mail" id="mail" autocomplete="on" placeholder="RDM@hotmail.com"> <br>
+						*Elle sera utiliée uniquement pour vous envoyer une copie du reçu et pour vous envoyer des messages en lien avec votre/vos cours.<br><br>
+						
+						<label for="fidelite"> Nombre d'années dans <em>Rythmes du Monde</em> (optionel): </label> <br>
+						<input type="number" name="fidelite" id="fidelite" min="0" max="7"> <br><br><br>
+						
 						<label for="nuire"> Si la personne inscrite souffre de problèmes de santé pouvant nuire à l'activité, veuillez nous le communiquer ici: </label> <br>
 						<textarea name="nuit" id="nuire"> </textarea> <br>
 					</fieldset>
 					
-					<fieldset>
+					<!--section2: choix du/des cours-->
+					<fieldset id="choixcours">
 						<legend> Choix de cours </legend>
-						<input type="checkbox" name="cours" value="">
+						<ul>
+							<li> Danse folklorique </li>
+								<ul>
+									<li><input type="checkbox" name="cours" value="folklorique1/3" id="folklorique1/3">
+										<label for="folklorique1/3"> Danse folklorique (5-9ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="folklorique2/3" id="folklorique2/3">
+										<label for="folklorique2/3"> Danse folklorique (10-15ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="folklorique3/3" id="folklorique3/3">
+										<label for="folklorique2/3"> Danse folklorique (16ans+) </label>
+									</li>
+								</ul> <br>
+							<li> Gigue </li>
+								<ul>
+									<li><input type="checkbox" name="cours" value="gigue1/3" id="gigue1/3">
+										<label for="gigue1/3"> Gigue (8-11ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="gigue2/3" id="gigue2/3">
+										<label for="gigue2/3"> Gigue (12-15ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="gigue3/3" id="gigue3/3">
+										<label for="gigue3/3"> Gigue (16ans+) </label>
+									</li>
+								</ul> <br>
+							<li> Danse en ligne </li>
+								<ul>
+									<li><input type="checkbox" name="cours" value="enligne1/2" id="enligne1/2">
+										<label for="enligne1/2"> Danse en ligne (10-15ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="enligne2/2" id="enligne2/2">
+										<label for="enligne2/2"> Danse en ligne (16ans+) </label>
+									</li>
+								</ul> <br>
+							<li> Danses sociales (latines) </li>
+								<ul>
+									<li><input type="checkbox" name="cours" value="socialelatine1/2" id="socialelatine1/2">
+										<label for="socialelatine1/2"> Danses sociales (latines) (10-15ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="socialelatine2/2" id="socialelatine2/2">
+										<label for="socialelatine2/2"> Danses sociales (latines) (16ans+) </label>
+									</li>
+								</ul> <br>
+							<li> Autres danses sociales </li>
+								<ul>
+									<li><input type="checkbox" name="cours" value="socialeautre1/2" id="socialeautre1/2">
+										<label for="socialeautre1/2"> Autres danses sociales (10-15ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="socialeautre2/2" id="socialeautre2/2">
+										<label for="socialeautre2/2"> Autres danses sociales (16ans+) </label>
+									</li>
+								</ul> <br>
+							<li> Bollywood </li>
+								<ul>
+									<li><input type="checkbox" name="cours" value="bollywood1/3" id="bollywood1/3">
+										<label for="bollywood1/2"> Bollywood (8-11ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="bollywood2/3" id="bollywood2/3">
+										<label for="bollywood2/3"> Bollywood (12-15ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="bollywood3/3" id="bollywood3/3">
+										<label for="bollywood3/3"> Bollywood (16ans+) </label>
+									</li>
+								</ul> <br>
+							<li> Baladi </li>
+								<ul>
+									<li><input type="checkbox" name="cours" value="baladi1/2" id="baladi1/2">
+										<label for="baladi1/2"> Baladi (10-15ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="baladi2/2" id="baladi2/2">
+										<label for="baladi2/2"> Baladi (16ans+) </label>
+									</li>
+								</ul> <br>
+							<li> Danse africaine </li>
+								<ul>
+									<li><input type="checkbox" name="cours" value="africaine1/3" id="africaine1/3">
+										<label for="africaine1/3"> Danse africaine (8-11ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="africaine1/3" id="africaine1/3">
+										<label for="africaine1/3"> Danse africaine (8-11ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="africaine1/3" id="africaine1/3">
+										<label for="africaine1/3"> Danse africaine (8-11ans) </label>
+									</li>
+								</ul> <br>
+							<li> Gumboot </li>
+								<ul>
+									<li><input type="checkbox" name="cours" value="gumboot1/3" id="gumboot1/3">
+										<label for="gumboot1/3"> Gumboot (8-11ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="gumboot2/3" id="gumboot2/3">
+										<label for="gumboot2/3"> Gumboot (12-15ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="gumboot3/3" id="gumboot3/3">
+										<label for="gumboot3/3"> Gumboot (16ans+) </label>
+									</li>
+								</ul> <br>
+							<li> Djembé </li>
+								<ul>
+									<li><input type="checkbox" name="cours" value="djembe1/2" id="djembe1/2">
+										<label for="djembe1/2"> Djembé (10-15ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="djembe2/2" id="djembe2/2">
+										<label for="djembe2/2"> Djembé (16ans+) </label>
+									</li>
+								</ul> <br>
+							<li> Zumba </li>
+								<ul>
+									<li><input type="checkbox" name="cours" value="zumba1/3" id="zumba1/3">
+										<label for="zumba1/3"> Zumba (8-11ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="zumba2/3" id="zumba2/3">
+										<label for="zumba2/3"> Zumba (12-15ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="zumba3/3" id="zumba3/3">
+										<label for="zumba3/3"> Zumba (16ans+) </label>
+									</li>
+								</ul> <br>
+							<li> Hip-Hop </li>
+								<ul>
+									<li><input type="checkbox" name="cours" value="hip-hop1/3" id="hip-hop1/3">
+										<label for="hip-hop1/3"> Hip-Hop (8-11ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="hip-hop2/3" id="hip-hop2/3">
+										<label for="hip-hop2/3"> Hip-Hop (12-15ans) </label>
+									</li>
+									<li><input type="checkbox" name="cours" value="hip-hop3/3" id="hip-hop3/3">
+										<label for="hip-hop3/3"> Hip-Hop (16ans+) </label>
+									</li>
+								</ul>
+						</ul>
 					</fieldset>
 					
+					<!--section3: paiement-->
 					<fieldset>
 						<legend> Paiement par carte de crédit </legend>
-						<label for="prenom2"> Prénom du détenteur: </label>
-						<input type="text" name="prenom2" id="prenom2" required> <br>
-						<label for="nom2"> Nom du détenteur: </label>
-						<input type="text" name="nom2" id="nom2" required> <br>
-						<!--numero de carte // date expiration-->
-						Date d'expiration:
+						<label for="prenom2"> Prénom du détenteur: </label> <br>
+						<input type="text" name="prenom2" id="prenom2" size="15" placeholder="Jenny" required> <br><br>
+						
+						<label for="nom2"> Nom du détenteur: </label> <br>
+						<input type="text" name="nom2" id="nom2" size="15" placeholder="Greenleaf" required> <br><br>
+						
+						<label for="nocredit1">Numéro de carte de crédit: </label> <br>
+						<input type="text" name="nocredit1" id="nocredit1" size="4" autocomplete="off" required>
+						<label for="nocredit2"> - </label>
+						<input type="text" name="nocredit2" id="nocredi2" size="4" autocomplete="off" required>
+						<label for="nocredit3"> - </label>
+						<input type="text" name="nocredit3" id="nocredit3" size="4" autocomplete="off" required>
+						<label for="nocredit4"> - </label>
+						<input type="text" name="nocredit4" id="nocredit4" size="4" autocomplete="off" required> <br><br>
+		<!--numero de carte: champs valide// date expiration-->
+		
+						Date d'expiration <br>
+						Mois: <br>
 						<select name="expireMM" id="expireMM" required>
-							<option value=" ">Mois</option>
 							<option value="01">Janvier</option>
 							<option value="02">Février</option>
 							<option value="03">Mars</option>
@@ -115,14 +278,15 @@
 							<option value="10">Octobre</option>
 							<option value="11">Novembre</option>
 							<option value="12">Décembre</option>
-						</select>
-						<label for="expireAA">Année:</label>
-						<input type="number" name="expireAA" id="expireAA" min="2017" required>
-							
+						</select> <br>
 						
+						<label for="expireAA"> Année: </label> <br>
+						<input type="number" name="expireAA" id="expireAA" min="2017" required>
 					</fieldset>
 					
-					<input type="submit" value="Valider">
+					<!--bouton valider-->
+		<!--if (javascript..) effectue si champs = filled-->
+					<input type="submit" onclick="alert('Votre inscription a été effectuée avec succès.')" value="Valider">
 				</form>
 			
 				<!--général-->

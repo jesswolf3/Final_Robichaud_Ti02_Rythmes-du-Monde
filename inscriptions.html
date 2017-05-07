@@ -47,7 +47,83 @@
 				<h2> Inscriptions </h2>
 				<p> Cliquez <a href="PDF/liste-cours.pdf" target="_blank">ici</a> pour voir la liste complète des cours offerts avec des détails supplémentaires pour les inscriptions, incluant les prix. </p>
 				
-				
+				<form method="post" action="traitement.php">
+					<fieldset>
+						<legend> Renseignements personnels sur la personne à inscrire: </legend>
+						<label for="prenom1"> Prénom: </label>
+						<input type="text" name="prenom1" id="prenom1" autofocus required> <br>
+						<label for="nom1"> Nom: </label>
+						<input type="text" name="nom1" id="nom1" required> <br>
+						<label for="naissance"> Date naissance: </label>
+						<input type="date" name="naissance" id="naissance" required> <br>
+						<label for="telephone"> Numéro de téléphone: </label>
+						<input type="tel" name="telephone" id="telephone"  placeholder="Ex: 450-378-3690" required> <br>
+						
+						<!--adresse-->
+						<label for="numero"> Numéro civic: </label>
+						<input type="number" name="numero" id="numero"  min="1" autocomplete="on" placeholder="Ex: 357" required> <br>
+						<label for="rue"> Rue: </label>
+						<input type="text" name="rue" id="rue" autocomplete="on" required> </br>
+						<label for="ville"> Ville: </label>
+						<input type="text" name="ville" id="ville" autocomplete="on" required> <br>
+						Province: 
+						<select name="province">
+							<option value="Alberta">Alberta</option>
+							<option value="Colombie-Britannique">Colombie-Britannique</option>
+							<option value="Nouveau-Brunswick">Nouveau-Brunswick</option>
+							<option value="Nunavut">Nunavut</option>
+							<option value="Ontario">Ontario</option>
+							<option value="Québec" selected>Québec</option>
+						</select> <br>
+						<label for="postal"> Code postal: </label>
+			<!--postal code = type??-->
+						<input type="???" name="postal" id="postal" autocomplete="on" placeholder="Ex: J4M 4V4" required> <br>
+							
+						
+						<label for="email"> Adresse email (optionel): </label>
+						<input type="email" name="mail" id="mail" autocomplete="on"> <br>
+						<label for="fidelite"> Nombre d'années dans <em>Rythmes du Monde (optionel):</em> </label>
+						<input type="number" name="fidelite" id="fidelite" min="0" max="7"> <br><br>
+						<label for="nuire"> Si la personne inscrite souffre de problèmes de santé pouvant nuire à l'activité, veuillez nous le communiquer ici: </label> <br>
+						<textarea name="nuit" id="nuire"> </textarea> <br>
+					</fieldset>
+					
+					<fieldset>
+						<legend> Choix de cours </legend>
+						<input type="checkbox" name="cours" value="">
+					</fieldset>
+					
+					<fieldset>
+						<legend> Paiement par carte de crédit </legend>
+						<label for="prenom2"> Prénom du détenteur: </label>
+						<input type="text" name="prenom2" id="prenom2" required> <br>
+						<label for="nom2"> Nom du détenteur: </label>
+						<input type="text" name="nom2" id="nom2" required> <br>
+						<!--numero de carte // date expiration-->
+						Date d'expiration:
+						<select name="expireMM" id="expireMM" required>
+							<option value=" ">Mois</option>
+							<option value="01">Janvier</option>
+							<option value="02">Février</option>
+							<option value="03">Mars</option>
+							<option value="04">Avril</option>
+							<option value="05">Mai</option>
+							<option value="06">Juin</option>
+							<option value="07">Juillet</option>
+							<option value="08">Août</option>
+							<option value="09">Septembre</option>
+							<option value="10">Octobre</option>
+							<option value="11">Novembre</option>
+							<option value="12">Décembre</option>
+						</select>
+						<label for="expireAA">Année:</label>
+						<input type="number" name="expireAA" id="expireAA" min="2017" required>
+							
+						
+					</fieldset>
+					
+					<input type="submit" value="Valider">
+				</form>
 			
 				<!--général-->
 				<!--Pour nous joindre/mailto-->

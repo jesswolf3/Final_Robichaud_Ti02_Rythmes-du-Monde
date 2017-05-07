@@ -55,10 +55,10 @@
 					<fieldset>
 						<legend> Renseignements personnels: </legend>
 						<label for="prenom1"> Prénom: </label> <br>
-						<input type="text" name="prenom1" id="prenom1" size="15" placeholder="Jenny" autofocus required> <br><br>
+						<input type="text" name="prenom1" id="prenom1" size="15"  autofocus required> <br><br>
 						
 						<label for="nom1"> Nom: </label> <br>
-						<input type="text" name="nom1" id="nom1" size="15" placeholder="Greenleaf" required> <br><br>
+						<input type="text" name="nom1" id="nom1" size="15" required> <br><br>
 						
 						<label for="loisir"> Numéro de carte loisir: </label> <br>
 		<!--no.carte loisir:champs avec nb exacte de nb-->
@@ -77,14 +77,11 @@
 						
 						<!--adresse-->
 		<!--numero porte type number ou text-->
-						<label for="numero"> Numéro civique: </label> <br>
-						<input type="number" name="numero" id="numero"  min="1" autocomplete="on" placeholder="357" required> <br><br>
-						
-						<label for="rue"> Rue: </label> <br>
-						<input type="text" name="rue" id="rue" autocomplete="on" placeholder="rue Principale" required> </br><br>
+						<label for="adresse"> Adresse: </label> <br>
+						<input type="text" name="adresse" id="adresse"  min="1" autocomplete="on" placeholder="357 rue Principale" required> <br><br>
 						
 						<label for="ville"> Ville: </label> <br>
-						<input type="text" name="ville" id="ville" autocomplete="on" placeholder="Granby" required> <br><br>
+						<input type="text" name="ville" id="ville" autocomplete="on" required> <br><br>
 						
 						Province: <br>
 						<select name="province">
@@ -98,8 +95,8 @@
 						<input type="text" name="postal" id="postal" maxlength="7" size="7" autocomplete="on" placeholder="J4M 4V4" required> <br><br>
 						
 						<label for="email"> Adresse email (optionel): </label> <br>
-						<input type="email" name="mail" id="mail" autocomplete="on" placeholder="RDM@hotmail.com"> <br>
-						*Elle sera utiliée uniquement pour vous envoyer une copie du reçu et pour vous envoyer des messages en lien avec votre/vos cours.<br><br>
+						<input type="email" name="mail" id="mail" autocomplete="on"> <br>
+						*Elle sera utilisée uniquement pour vous envoyer une copie du reçu et pour vous envoyer des messages en lien avec votre/vos cours.<br><br>
 						
 						<label for="fidelite"> Nombre d'années dans <em>Rythmes du Monde</em> (optionel): </label> <br>
 						<input type="number" name="fidelite" id="fidelite" min="0" max="7"> <br><br><br>
@@ -248,19 +245,19 @@
 					<fieldset>
 						<legend> Paiement par carte de crédit </legend>
 						<label for="prenom2"> Prénom du détenteur: </label> <br>
-						<input type="text" name="prenom2" id="prenom2" size="15" placeholder="Jenny" required> <br><br>
+						<input type="text" name="prenom2" id="prenom2" size="15" required> <br><br>
 						
 						<label for="nom2"> Nom du détenteur: </label> <br>
-						<input type="text" name="nom2" id="nom2" size="15" placeholder="Greenleaf" required> <br><br>
+						<input type="text" name="nom2" id="nom2" size="15" required> <br><br>
 						
 						<label for="nocredit1">Numéro de carte de crédit: </label> <br>
-						<input type="text" name="nocredit1" id="nocredit1" size="4" autocomplete="off" required>
+						<input type="text" name="nocredit1" id="nocredit1" maxlength="4" size="4" autocomplete="off" required>
 						<label for="nocredit2"> - </label>
-						<input type="text" name="nocredit2" id="nocredi2" size="4" autocomplete="off" required>
+						<input type="text" name="nocredit2" id="nocredi2" maxlength="4" size="4" autocomplete="off" required>
 						<label for="nocredit3"> - </label>
-						<input type="text" name="nocredit3" id="nocredit3" size="4" autocomplete="off" required>
+						<input type="text" name="nocredit3" id="nocredit3" maxlength="4" size="4" autocomplete="off" required>
 						<label for="nocredit4"> - </label>
-						<input type="text" name="nocredit4" id="nocredit4" size="4" autocomplete="off" required> <br><br>
+						<input type="text" name="nocredit4" id="nocredit4" maxlength="4" size="4" autocomplete="off" required> <br><br>
 		<!--numero de carte: champs valide// date expiration-->
 		
 						Date d'expiration <br>

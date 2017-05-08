@@ -275,11 +275,40 @@ th, td{
 
 
 /*page partenaires d'affaires*/
-
+.partenaires{
+	/*padding: 0px 20px 20px 20px;*/
+	width: 85%;
+	padding: 15px;
+	margin: 15px;
+	font-size: 18px;
+	/*font-family: ;*/
+}
+.imgpartenaires{
+	display: inline;
+	width: 30%;
+}
 
 
 /*page fournisseurs*/
-
+#fournisseurs{
+	/*padding: 0px 20px 20px 20px;*/
+	width: 85%;
+	padding: 15px;
+	margin: 15px;
+	font-size: 18px;
+	/*font-family: ;*/
+}
+#fournisseurs img{
+	width: 20%;
+}
 
 
 /*page coordonnées/localisation*/
+iframe{
+	/*padding: 0px 20px 20px 20px;*/
+	width: 85%;
+	padding: 15px;
+	margin: 15px;
+	font-size: 18px;
+	/*font-family: ;*/
+}

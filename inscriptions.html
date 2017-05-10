@@ -8,6 +8,13 @@
 		<link rel="stylesheet" href="CSS/styles1.css">
 	</head>
 	
+	<script type="text/javascript">
+		function validateForm(){
+			alert("Votre inscription a été effectuée avec succès.");
+			return true;
+		}
+	</script>
+	
 	<body>
 		<!--général-->
 		<h1 id="top"> Rythmes du Monde </h1>
@@ -50,7 +57,7 @@
 				
 				<!--formulaire d'inscription-->
 				<h3> Formulaire d'inscription </h3>
-				<form method="post" action="traitement.php">
+				<form method="post" action="traitement.php" onsubmit="return validateForm()">
 					<!--section1: renseignements personnels-->
 					<fieldset>
 						<legend> Renseignements personnels: </legend>
@@ -278,12 +285,11 @@
 						</select> <br>
 						
 						<label for="expireAA"> Année: </label> <br>
-						<input type="number" name="expireAA" id="expireAA" min="2017" required>
+						<input type="number" name="expireAA" id="expireAA" min="2017" max="2027" required>
 					</fieldset>
 					
 					<!--bouton valider-->
-		<!--if (javascript..) effectue si champs = filled-->
-					<input type="submit" value="Valider"> <!--onclick="alert('Votre inscription a été effectuée avec succès.')"-->
+					<input type="submit" value="Valider">
 				</form>
 			
 				<!--général-->

@@ -30,14 +30,21 @@ body{
 h1{
 	width: 90%;
 	font-family: 'Orbitron', sans-serif;
+	font-size: 40px;
 	text-align: center;
 	text-shadow: 4px 3px 3px gray;
 }
 /*autres titres*/
 h2{
 	padding-left: 40px;
+	font-size: 30px;
 }
-h3, h4{
+h3{
+	font-size: 25px;
+	text-align: center;
+}
+h4{
+	font-size: 23px;
 	text-align: center;
 }
 /*textes*/
@@ -46,7 +53,7 @@ p{
 	width: 85%;
 	padding: 15px;
 	margin: 15px;
-	font-size: 18px;
+	font-size: 19px;
 	/*font-family: ;*/
 }
 
@@ -169,6 +176,9 @@ mark{
 
 
 /*page projets*/
+span{
+	font-size: 21px;
+}
 .IMGprojetjapon{
 	width: 45%;
 }
@@ -226,8 +236,23 @@ legend{
 }
 
 /*page boutique*/
-
-
+#htmlboutique{
+	min-height: 100%;
+}
+#bodyboutique{
+	height: 100%;
+}
+#contenuboutique{
+	width:70%;
+	margin: auto;
+	border-radius: 15px;
+	background: rgba(0,0,0,0.8);
+	padding: 15px 0px 0px 0px;
+	font-size: 18px;
+}
+#divboutique{
+	height: 2000px;
+}
 
 /*page employés: tableau employés*/
 table{
@@ -292,7 +317,6 @@ th, td{
 
 /*page coordonnées/localisation*/
 iframe{
-	/*padding: 0px 20px 20px 20px;*/
 	width: 85%;
 	padding: 15px;
 	margin: 15px;

@@ -60,6 +60,9 @@ p{
 	/*font-family: ;*/
 	line-height: 25px;
 }
+.centrertexte{
+	text-align: center;
+}
 
 /*décale <article> vers la droite*/
 article{
@@ -72,6 +75,12 @@ img{
 }
 table{
 	margin: 20px auto auto auto;
+	border-collapse: collapse;
+}
+
+th, td{
+	padding: 8px;
+	border: 1px solid gray;
 }
 
 /*barre menu*/
@@ -133,6 +142,7 @@ footer{
 	text-align: center;
 }
 
+
 /*page accueil*/
 /*logo*/
 #logo{
@@ -143,9 +153,6 @@ footer{
 .h2index{
 	padding-top: 30px;
 }
-/*clientèle...remove?*/
-
-
 /*boîtes des nouvelles*/
 .news{
 	width: 80%;
@@ -168,7 +175,6 @@ footer{
 #img-defile{
 	width: 200px;
 	padding-top: 10px;
-	margin: auto;
 }
 #fictif{
 	/*width: 80%;*/
@@ -218,7 +224,7 @@ mark{
 	margin: auto;
 }
 #projetchine{
-	text-align: center; /*!important (need or not?-----*/
+	text-align: center;
 }
 .IMGsalles{
 	width: 50%;
@@ -231,9 +237,6 @@ mark{
 
 
 /*pages cours*/
-#catchy{
-	text-align: center;   /*???-----------------*/
-}
 ol{
 	margin-top: 30px;
 }
@@ -297,10 +300,10 @@ legend{
 	color: white;
 	font-size: 21px;
 }
-/*doesnt work-------------------*/
 #choixcours li{
 	list-style-type: none;
 }
+
 
 /*page boutique*/
 #htmlboutique{
@@ -317,28 +320,12 @@ legend{
 	padding: 15px 0px 0px 0px;
 	font-size: 18px;
 }
-#pboutique{
-	width: 80%;
-}
 #divboutique{
 	height: 2000px;
 }
 
+
 /*page employés: tableau employés*/
-table{
-	border-collapse: collapse;
-}
-
-th, td{
-	padding: 8px;
-	border: 1px solid gray;
-}
-
-.nom{
-	text-align: center;
-}
-
-/*tableau employés*/
 /*#temployes{ --------------------------------
 	margin: 15px;
 }*/
@@ -348,6 +335,9 @@ th, td{
 /*photos employés*/
 .face{
 	width: 75px;
+}
+.nom{
+	text-align: center;
 }
 
 
@@ -388,6 +378,10 @@ th, td{
 
 
 /*page coordonnées/localisation*/
+/*annuler le text align de h3 padding left 8%? ---------*/
+#h3coord{
+	
+}
 iframe{
 	width: 85%;
 	padding: 15px;

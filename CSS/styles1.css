@@ -64,10 +64,13 @@ p{
 	text-align: center;
 }
 
-/*décale <article> vers la droite*/
+/*décale <article> vers la droite ..remove?--------*/
 article{
-	padding-left: 200px;
-	margin: auto;
+	/*padding-left: 200px;*/
+}
+.border{
+	border-left: 1px dotted gray;
+	margin: auto auto auto 200px;
 }
 /*images sur nouvelle ligne*/
 img{
@@ -90,8 +93,8 @@ from side to top responsive design----------*/
 	position: fixed;
 	height: 100%;
 	padding: 20px 15px 20px 15px;
-	border: 1px dotted gray;
-	border-top: none;
+	/*border: 1px dotted gray;
+	border-top: none;*/
 	left: 15%;
 	list-style-type: none;
 	font-size: 16px;
@@ -192,10 +195,20 @@ mark{
 
 /*page historique*/
 /*photo fondateurs*/
+.histo::first-letter{
+	font-size: 30px;
+	font-family: "Old English Text MT";
+}
 #fondateurs{
 	width: 90%;
-	padding-bottom: 10px;
+	/*padding-bottom: 10px;*/
 	margin: auto;
+}
+#chrono{
+	padding-bottom: 0px;
+}
+#sousphoto{
+	padding-top: 8px;
 }
 /*logos dans historique*/
 .logo-histo{
@@ -211,12 +224,19 @@ mark{
 .h4projets{
 	text-align: center;
 }
+.projetjapon{
+	font-size: 19px;
+	text-align: center;
+}
 .dansejapon{
 	font-size: 21px;
+	text-align: center;
 }
 .IMGprojetjapon{
-	width: 45%;
+	width: 70%;
 	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: auto;
 }
 .IMGprojetchine{
 	width: 70%;
@@ -226,13 +246,26 @@ mark{
 #projetchine{
 	text-align: center;
 }
-.IMGsalles{
-	width: 50%;
+#IMGpalace{
+	width: 45%;
 	padding-top: 10px;
 	margin: auto;
 }
-.salles{ /*span nom theatre+nb places a center--------*/
+#IMGrialto{
+	width: 59%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: auto;
+}
+.salles{ /*div nom theatre+nb places a center--------*/
 	text-align: center;
+	font-size: 19px;
+	padding-bottom: 30px;
+}
+.salles IMG{
+	width: 50%;
+	padding-top: 10px;
+	margin: auto;
 }
 
 
@@ -378,12 +411,17 @@ legend{
 
 
 /*page coordonnées/localisation*/
-/*annuler le text align de h3 padding left 8%? ---------*/
+/*annuler le text-align de h3*/
 #h3coord{
-	
+	text-align: inherit;
+	padding-left: 8%;
 }
 iframe{
 	width: 85%;
 	padding: 15px;
 	margin: 15px;
+}
+#map{
+	/*width: 85%;*/
+	/*margin: auto;*/
 }

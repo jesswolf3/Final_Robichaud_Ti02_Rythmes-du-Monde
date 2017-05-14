@@ -100,9 +100,38 @@ th, td{
 /*to do: animation->apparait 1 a 1-------------
  nouvelles options dans la barre menu----------
  accueil, histo, projet, annees, boutique----*/
-.barre-transi{
-	
+.menu-cours{
+	list-style-position: inside;
+	-webkit-padding-start: 23px;
 }
+
+.barre-transi-4{
+	height:20px;
+	overflow: hidden;
+	transition: height 1s;
+}
+.barre-transi-4:hover{
+	height: 95px;
+}
+
+.barre-transi-1{
+	height:20px;
+	overflow: hidden;
+	transition: height 1s;
+}
+.barre-transi-1:hover{
+	height: 40px;
+}
+
+.barre-transi-2{
+	height:20px;
+	overflow: hidden;
+	transition: height 1s;
+}
+.barre-transi-2:hover{
+	height: 60px;
+}
+
 .hautpage{
 	position: fixed;
 	width: 170px;

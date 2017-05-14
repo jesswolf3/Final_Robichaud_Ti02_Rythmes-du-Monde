@@ -100,10 +100,10 @@ th, td{
 /*to do: animation->apparait 1 a 1-------------
  nouvelles options dans la barre menu----------
  accueil, histo, projet, annees, boutique----*/
-.barre-anim{
+.barre-transi{
 	
 }
-#hautpage{
+.hautpage{
 	position: fixed;
 	width: 170px;
 	padding: 20px 15px 20px 15px;
@@ -319,16 +319,38 @@ ol li{
 	padding-bottom: 10px;
 	margin: auto;
 }
+/*video gumboot*/
 video{
 	display: block;
 	width: 90%;
 	margin: auto;
 }
+/*??*/
 .video{
 	display: block;
 	height: 90%;
 	width: 90%;
 	margin: auto;
+}
+.englobe{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+.h_iframe{
+	position: relative;
+}
+.ratio{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.h_iframe iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 
@@ -386,12 +408,21 @@ input[type="submit"]:hover{
 /*#temployes{ --------------------------------
 	margin: 15px;
 }*/
-#temployes th, #temployes td{
+#temployes{
+	width: 85%;
+}
+#temployes th{
+	font-size: 21px;
+}
+#temployes td{
 	font-size: 19px;
 }
 /*photos employés*/
 .face{
-	width: 75px;
+	min-width:75px;
+	max-width:120px;
+	width: 100%;
+	margin:auto;
 }
 .nom{
 	text-align: center;
@@ -417,12 +448,12 @@ input[type="submit"]:hover{
 #fournisseurs{
 	/*padding: 0px 20px 20px 20px;*/
 	width: 85%;
-	padding: 15px;
-	margin: 15px;
 	font-size: 18px;
 }
 #fournisseurs img{
-	width: 50%;
+	min-width: 80px;
+	max-width: 181px;
+	width: 60%;
 	margin: auto;
 }
 #fournisseurs td{
@@ -431,6 +462,9 @@ input[type="submit"]:hover{
 }
 #fournisseurs li{
 	list-style-type: none;
+}
+#fournisseurs ul{
+	padding: 0px;
 }
 
 

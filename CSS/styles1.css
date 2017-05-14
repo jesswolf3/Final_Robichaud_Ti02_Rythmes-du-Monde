@@ -82,6 +82,28 @@ th, td{
 	border: 1px solid gray;
 }
 
+/*iframe (éléments intégrés à partir de site)*/
+.englobe{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+.h_iframe{
+	position: relative;
+}
+.ratio{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.h_iframe iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 /*barre menu*/
 /*to do: from side to top responsive design----------*/
 .menu{
@@ -186,7 +208,6 @@ footer{
 	text-align: center;
 }
 #fictif{
-	/*width: 80%;*/
 	width: 90%;
 	margin: auto;
 	text-align: center;
@@ -203,11 +224,10 @@ mark{
 /*photo fondateurs*/
 .histo::first-letter{
 	font-size: 30px;
-	font-family: "Old English Text MT";
+	font-family: "Old English Text MT", sans-serif;
 }
 #fondateurs{
 	width: 90%;
-	/*padding-bottom: 10px;*/
 	margin: auto;
 }
 #chrono{
@@ -263,12 +283,12 @@ mark{
 	padding-bottom: 10px;
 	margin: auto;
 }
-.salles{ /*div nom theatre+nb places a center--------*/
+.salles{
 	text-align: center;
 	font-size: 19px;
 	padding-bottom: 30px;
 }
-.salles IMG{
+.salles img{
 	width: 50%;
 	padding-top: 10px;
 	margin: auto;
@@ -290,31 +310,23 @@ ol li{
 .materiel{
 	padding-top: 0px;
 }
-/*todo: + d'alinea---------------------------*/
 .defdanse{
-	/*padding: 0px 20px 20px 20px;*/
 	width: 80%;
 	padding: 15px;
-	/*margin: 15px; /*ou auto??----------*/
 	margin: auto;
 	font-size: 19px;
 }
-/*todo: +animation bigger hover-------------*/
 .IMGcours1{
 	width: 49%;
 	display: inline;
 }
-/*todo: +animation bigger hover------------*/
 .IMGcours{
 	width: 80%;
 	padding-bottom: 10px;
 	margin: auto;
 }
-/*todo: adjustable mais max height-----------------------
-+animation bigger hover*/
 .IMGcoursVert{
-	max-height: 600px;
-	width: auto;
+	height: 600px;
 	display: block;
 	padding-bottom: 10px;
 	margin: auto;
@@ -325,44 +337,14 @@ video{
 	width: 90%;
 	margin: auto;
 }
-/*??*/
-.video{
-	display: block;
-	height: 90%;
-	width: 90%;
-	margin: auto;
-}
-.englobe{
-	width: 80%;
-	height: 100%;
-	margin: 0 auto;
-}
-.h_iframe{
-	position: relative;
-}
-.ratio{
-	display: block;
-	width: 100%;
-	height: auto;
-}
-.h_iframe iframe{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 
 
 /*page inscriptions*/
 form{
-	/*padding: 0px 20px 20px 20px;*/
 	width: 75%;
 	padding: 15px;
-	/*margin: 15px;*/
 	margin: auto;
 	font-size: 18px;
-	/*font-family: ;*/
 }
 fieldset{
 	margin-bottom: 6px;
@@ -405,9 +387,6 @@ input[type="submit"]:hover{
 
 
 /*page employés: tableau employés*/
-/*#temployes{ --------------------------------
-	margin: 15px;
-}*/
 #temployes{
 	width: 85%;
 }
@@ -431,22 +410,21 @@ input[type="submit"]:hover{
 
 /*page partenaires d'affaires*/
 .partenaires{
-	/*padding: 0px 20px 20px 20px;*/
 	width: 85%;
 	padding: 15px;
-	margin: 15px;
-	font-size: 18px;
-	/*font-family: ;*/
+	margin: 10px auto auto auto;
 }
-.imgpartenaires{
-	display: inline;
+.partenaires img{
 	width: 30%;
+	margin: auto;
 }
-
+.partenaires p{
+	font-size: 25px;
+	text-align: center;
+}
 
 /*page fournisseurs*/
 #fournisseurs{
-	/*padding: 0px 20px 20px 20px;*/
 	width: 85%;
 	font-size: 18px;
 }
@@ -473,15 +451,6 @@ input[type="submit"]:hover{
 #h3coord{
 	text-align: inherit;
 	padding-left: 8%;
-}
-#gmap{
-	width: 85%;
-	padding: 15px;
-	margin: 15px;
-}
-#map{
-	/*width: 85%;*/
-	/*margin: auto;*/
 }
 
 

@@ -64,10 +64,6 @@ p{
 	text-align: center;
 }
 
-/*décale <article> vers la droite ..remove?--------*/
-article{
-	/*padding-left: 200px;*/
-}
 .border{
 	border-left: 1px dotted gray;
 	margin: auto auto auto 200px;
@@ -87,14 +83,11 @@ th, td{
 }
 
 /*barre menu*/
-/*to do: faire que go jusqu'au top---------
-from side to top responsive design----------*/
+/*to do: from side to top responsive design----------*/
 .menu{
-	position: fixed;
+	position: absolute;
 	height: 100%;
 	padding: 20px 15px 20px 15px;
-	/*border: 1px dotted gray;
-	border-top: none;*/
 	left: 15%;
 	list-style-type: none;
 	font-size: 16px;
@@ -109,6 +102,16 @@ from side to top responsive design----------*/
  accueil, histo, projet, annees, boutique----*/
 .barre-anim{
 	
+}
+#hautpage{
+	position: fixed;
+	width: 170px;
+	padding: 20px 15px 20px 15px;
+	/*left: 15%;*/
+	bottom: 0px;
+	list-style-type: none;
+	font-size: 16px;
+	text-align: center;
 }
 
 /*liens*/
@@ -178,6 +181,9 @@ footer{
 #img-defile{
 	width: 200px;
 	padding-top: 10px;
+}
+#navigateur{
+	text-align: center;
 }
 #fictif{
 	/*width: 80%;*/
@@ -281,6 +287,9 @@ ol li{
 	margin-top: 5px;
 	margin-left: 6%; /*???--------------*/
 }
+.materiel{
+	padding-top: 0px;
+}
 /*todo: + d'alinea---------------------------*/
 .defdanse{
 	/*padding: 0px 20px 20px 20px;*/
@@ -301,16 +310,23 @@ ol li{
 	padding-bottom: 10px;
 	margin: auto;
 }
-/*doesnt work??----------------------------
+/*todo: adjustable mais max height-----------------------
 +animation bigger hover*/
 .IMGcoursVert{
-	height: 20%;
+	max-height: 600px;
+	width: auto;
 	display: block;
 	padding-bottom: 10px;
 	margin: auto;
 }
 video{
 	display: block;
+	width: 90%;
+	margin: auto;
+}
+.video{
+	display: block;
+	height: 90%;
 	width: 90%;
 	margin: auto;
 }
@@ -335,6 +351,14 @@ legend{
 }
 #choixcours li{
 	list-style-type: none;
+}
+input[type="submit"]{
+	font-size: 15px;
+	margin-top: 5px;
+	margin-left: 20px;
+}
+input[type="submit"]:hover{
+	background-color: #01D81D;
 }
 
 
@@ -416,7 +440,7 @@ legend{
 	text-align: inherit;
 	padding-left: 8%;
 }
-iframe{
+#gmap{
 	width: 85%;
 	padding: 15px;
 	margin: 15px;
@@ -425,3 +449,8 @@ iframe{
 	/*width: 85%;*/
 	/*margin: auto;*/
 }
+
+
+/*Responsive design*/
+@media screen and (max-width: 900px){
+	

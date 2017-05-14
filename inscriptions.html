@@ -56,6 +56,7 @@
 					<p> <strong>* Pour les inscriptions:</strong> si vous ne possédez pas de carte de crédit, vous devez vous présenter à notre réception. </p>
 					
 					<!--formulaire d'inscription-->
+					<!--size: longeur des champs .. pattern: nombre de charactères-->
 					<h3> Formulaire d'inscription </h3>
 					<form method="post" action="traitement.php" onsubmit="return validateForm()">
 						<!--section1: renseignements personnels-->
@@ -68,22 +69,19 @@
 							<input type="text" name="nom1" id="nom1" size="15" required> <br><br>
 							
 							<label for="loisir"> Numéro de carte loisir: </label> <br>
-			<!--no.carte loisir:champs avec nb exacte de nb-->
-							<input type="text" name="loisir" id="loisir" maxlength="9" size="15" placeholder="001357869" required> <br><br>
+							<input type="text" name="loisir" id="loisir" pattern=".{9,9}" size="9" placeholder="001357869" required> <br><br>
 							
 							<label for="naissance"> Date naissance: </label> <br>
 							<input type="date" name="naissance" id="naissance" required> <br><br>
 							
 							<label for="telephone1"> Numéro de téléphone: </label> <br>
-			<!--tel:champs avec nb exacte de nb...for vs id supposed same-->
-							<input type="tel" name="telephone" id="telephone1"  minlength="3" maxlength="3" size="3" placeholder="450" required> 
+							<input type="text" name="telephone" id="telephone1" pattern=".{3,3}" size="3" placeholder="450" required> 
 							<label for="telephone2"> - </label>
-							<input type="tel" name="telephone" id="telephone2"  maxlength="3" size="3" placeholder="378" required> 
+							<input type="text" name="telephone" id="telephone2" pattern=".{3,3}" size="3" placeholder="378" required> 
 							<label for="telephone3"> - </label>
-							<input type="tel" name="telephone" id="telephone3"  maxlength="4" size="4" placeholder="3690" required> <br><br>
+							<input type="text" name="telephone" id="telephone3" pattern=".{4,4}" size="4" placeholder="3690" required> <br><br>
 							
 							<!--adresse-->
-			<!--numero porte type number ou text-->
 							<label for="adresse"> Adresse: </label> <br>
 							<input type="text" name="adresse" id="adresse"  min="1" autocomplete="on" placeholder="357 rue Principale" required> <br><br>
 							
@@ -98,8 +96,7 @@
 							*Si vous résidez ailleurs, désolé, nos cours ne peuvent pas s'offrir à vous.<br><br>
 							
 							<label for="postal"> Code postal: </label> <br>
-			<!--postal code = type?? text? bon format-->
-							<input type="text" name="postal" id="postal" maxlength="7" size="7" autocomplete="on" placeholder="J4M 4V4" required> <br><br>
+							<input type="text" name="postal" id="postal" pattern=".{7,7}" size="7" autocomplete="on" placeholder="J4M 4V4" required> <br><br>
 							
 							<label for="email"> Adresse email (optionel): </label> <br>
 							<input type="email" name="mail" id="mail" autocomplete="on"> <br>
@@ -108,8 +105,8 @@
 							<label for="fidelite"> Nombre d'années dans <em>Rythmes du Monde</em> (optionel): </label> <br>
 							<input type="number" name="fidelite" id="fidelite" min="0" max="7"> <br><br><br>
 							
-							<label for="nuire"> Si la personne inscrite souffre de problèmes de santé pouvant nuire à l'activité, veuillez nous le communiquer ici: </label> <br>
-							<textarea name="nuit" id="nuire"> </textarea> <br>
+							<label for="probsante"> Si la personne inscrite souffre de problèmes de santé pouvant nuire à l'activité, veuillez nous le communiquer ici: </label> <br>
+							<textarea name="sante" id="probsante"> </textarea> <br>
 						</fieldset>
 						
 						<!--section2: choix du/des cours-->
@@ -258,13 +255,13 @@
 							<input type="text" name="nom2" id="nom2" size="15" required> <br><br>
 							
 							<label for="nocredit1">Numéro de carte de crédit: </label> <br>
-							<input type="text" name="nocredit1" id="nocredit1" maxlength="4" size="4" autocomplete="off" required>
+							<input type="text" name="nocredit1" id="nocredit1" pattern=".{4,4}" size="4" autocomplete="off" required>
 							<label for="nocredit2"> - </label>
-							<input type="text" name="nocredit2" id="nocredi2" maxlength="4" size="4" autocomplete="off" required>
+							<input type="text" name="nocredit2" id="nocredi2" pattern=".{4,4}" size="4" autocomplete="off" required>
 							<label for="nocredit3"> - </label>
-							<input type="text" name="nocredit3" id="nocredit3" maxlength="4" size="4" autocomplete="off" required>
+							<input type="text" name="nocredit3" id="nocredit3" pattern=".{4,4}" size="4" autocomplete="off" required>
 							<label for="nocredit4"> - </label>
-							<input type="text" name="nocredit4" id="nocredit4" maxlength="4" size="4" autocomplete="off" required> <br><br>
+							<input type="text" name="nocredit4" id="nocredit4" pattern=".{4,4}" size="4" autocomplete="off" required> <br><br>
 			<!--numero de carte: champs valide// date expiration-->
 			
 							Date d'expiration <br>
@@ -291,11 +288,11 @@
 						<!--bouton valider-->
 						<input type="submit" value="Valider">
 					</form>
-				
-					<!--général-->
-					<!--Pour nous joindre/mailto-->
-					<footer> &copy 2017 - Rythmes du Monde - <a href="mailto:jess_wolf3@hotmail.com"> Pour nous joindre </a> </footer>
 				</article>
+				
+				
+				<!--général: pied de page (Pour nous joindre + email)-->
+				<footer> &copy 2017 - Rythmes du Monde - <a href="mailto:jess_wolf3@hotmail.com"> Pour nous joindre </a> </footer>
 			</article>
 		</section>
 	</body>

@@ -1,16 +1,12 @@
 /*commun à toutes les pages*/
-/*dégradé*/
 html{
-	/*Chrome, Safari*/
-	background: -webkit-linear-gradient(top, #00FFDD, black); 
-	/*Opera*/
-	background: -o-linear-gradient(bottom, #00FFDD, black); 
-	/*Mozilla, Firefox*/
-	background: -moz-linear-gradient(bottom, #00FFDD, black); 
+	background: -webkit-linear-gradient(top, #00FFDD, black); /*Chrome, Safari*/
+	background: -o-linear-gradient(bottom, #00FFDD, black); /*Opera*/
+	background: -moz-linear-gradient(bottom, #00FFDD, black); /*Mozilla, Firefox*/
 	background: linear-gradient(to bottom, #00FFDD, black);
 	background-repeat: no-repeat;
 }
-/*boîte noire*/
+
 .contenu{
 	width:70%;
 	border-radius: 15px;
@@ -19,8 +15,10 @@ html{
 }
 
 body{
+	/*width:*/
 	padding: 0px;
-	margin: auto;
+	/*border*/
+	margin: auto; /*top,right,bot,left OR top/bot,right/left*/
 	color: white;
 }
 
@@ -37,6 +35,7 @@ h1{
 }
 /*autres titres*/
 h2{
+	/*padding-left: 40px;*/
 	padding-top: 50px;
 	font-size: 30px;
 	text-align: center;
@@ -52,16 +51,19 @@ h4{
 }
 /*textes*/
 p{
+	/*padding: 0px 20px 20px 20px;*/
 	width: 85%;
 	padding: 20px;
+	/*margin: 15px;*/
 	margin: auto;
 	font-size: 19px;
+	/*font-family: ;*/
 	line-height: 25px;
 }
 .centrertexte{
 	text-align: center;
 }
-/*bordure entre menu et contenu*/
+
 .border{
 	border-left: 1px dotted gray;
 	margin: auto auto auto 200px;
@@ -74,6 +76,7 @@ table{
 	margin: 20px auto auto auto;
 	border-collapse: collapse;
 }
+
 th, td{
 	padding: 8px;
 	border: 1px solid gray;
@@ -110,18 +113,20 @@ th, td{
 	left: 15%;
 	list-style-type: none;
 	font-size: 16px;
+	/*font-family: ;*/
 }
 /*logo barre menu*/
 .logo-accueil{
 	width: 150px;
 }
-/*transition (options apparaissent)*/
+/*to do: animation->apparait 1 a 1-------------
+ nouvelles options dans la barre menu----------
+ accueil, histo, projet, annees, boutique----*/
 .menu-cours{
 	list-style-position: inside;
 	-webkit-padding-start: 23px;
-	-moz-padding-start: 23px;
-	-o-padding-start: 23px;
 }
+
 .barre-transi-4{
 	height:20px;
 	overflow: hidden;
@@ -130,6 +135,7 @@ th, td{
 .barre-transi-4:hover{
 	height: 95px;
 }
+
 .barre-transi-1{
 	height:20px;
 	overflow: hidden;
@@ -138,6 +144,7 @@ th, td{
 .barre-transi-1:hover{
 	height: 40px;
 }
+
 .barre-transi-2{
 	height:20px;
 	overflow: hidden;
@@ -151,6 +158,7 @@ th, td{
 	position: fixed;
 	width: 170px;
 	padding: 20px 15px 20px 15px;
+	/*left: 15%;*/
 	bottom: 0px;
 	list-style-type: none;
 	font-size: 16px;
@@ -183,6 +191,7 @@ a:active{
 
 /*pied de page (© + nous joindre)*/
 footer{
+	/*width: 80%;*/
 	padding: 5px;
 	margin-top: 50px;
 	margin-bottom: 20px;
@@ -219,6 +228,7 @@ footer{
 .newstext{
 	padding: 0px 0px 0px 10px;
 }
+/*to do: % but 200px max----------------------*/
 #img-defile{
 	width: 200px;
 	padding-top: 10px;
@@ -238,7 +248,6 @@ mark{
 #footerindex{
 	margin-top: 10px;
 }
-
 
 /*page historique*/
 /*photo fondateurs*/
@@ -325,7 +334,7 @@ ol{
 ol li{
 	font-size: 19px;
 	margin-top: 5px;
-	margin-left: 6%;
+	margin-left: 6%; /*???--------------*/
 }
 .materiel{
 	padding-top: 0px;
@@ -336,18 +345,15 @@ ol li{
 	margin: auto;
 	font-size: 19px;
 }
-/*images côte à côte*/
 .IMGcours1{
 	width: 49%;
 	display: inline;
 }
-/*image seule*/
 .IMGcours{
 	width: 80%;
 	padding-bottom: 10px;
 	margin: auto;
 }
-/*image verticale*/
 .IMGcoursVert{
 	height: 600px;
 	display: block;
@@ -478,6 +484,70 @@ input[type="submit"]:hover{
 
 
 /*Responsive design*/
+
+#nav, label{
+	display: none;
+}
+
 @media screen and (max-width: 900px){
-	
+
+	label:after{
+  		content:'';
+  		display: block;
+  		width: 30px;
+  		height: 5px;
+  		background: #777;
+  		margin: 7px 5px;
+  		box-shadow: 0px 10px 0px #777, 0px 20px 0px #777
+	}
+
+	label {
+  		display: block;
+  		background: #222;
+		width: 40px;
+  		height: 40px;
+  		cursor: pointer;
+		position: absolute;
+		right: 20px;
+  		top: 0px;
+	}
+
+	[type="checkbox"]:checked ~ .menu{
+		display: block;
+  		z-index: 9999;
+  		position: absolute;
+		height:auto;
+		width:90%;
+		left:50%;
+		transform: translate(-50%, 0);
+		background-color: #000000;
+		text-align: center;
+		border-radius: 15px;
+		font-size:20px;
+	}
+
+
+	.logo-accueil{
+		margin: auto;
+	}
+
+	.menu li
+	{
+		padding:5px;
+		list-style: none;
+		margin:auto;
+	}
+	.menu li ul, .menu ul{
+		display:none;
+	}
+
+	.menu{
+		display: none;
+	}	
+	.border{
+		margin:auto;
+	}
+	.hautpage{
+		display: none;
+	}
 }

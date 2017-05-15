@@ -118,8 +118,9 @@ th, td{
 .menu-cours{
 	list-style-position: inside;
 	-webkit-padding-start: 23px;
+	-moz-padding-start: 23px;
+	-o-padding-start: 23px;
 }
-
 .barre-transi-4{
 	height:20px;
 	overflow: hidden;
@@ -128,7 +129,6 @@ th, td{
 .barre-transi-4:hover{
 	height: 95px;
 }
-
 .barre-transi-1{
 	height:20px;
 	overflow: hidden;
@@ -137,7 +137,6 @@ th, td{
 .barre-transi-1:hover{
 	height: 40px;
 }
-
 .barre-transi-2{
 	height:20px;
 	overflow: hidden;
@@ -146,12 +145,10 @@ th, td{
 .barre-transi-2:hover{
 	height: 60px;
 }
-
 .hautpage{
 	position: fixed;
 	width: 170px;
 	padding: 20px 15px 20px 15px;
-	/*left: 15%;*/
 	bottom: 0px;
 	list-style-type: none;
 	font-size: 16px;
@@ -184,7 +181,6 @@ a:active{
 
 /*pied de page (© + nous joindre)*/
 footer{
-	/*width: 80%;*/
 	padding: 5px;
 	margin-top: 50px;
 	margin-bottom: 20px;
@@ -240,6 +236,7 @@ mark{
 #footerindex{
 	margin-top: 10px;
 }
+
 
 /*page historique*/
 /*photo fondateurs*/
@@ -326,7 +323,7 @@ ol{
 ol li{
 	font-size: 19px;
 	margin-top: 5px;
-	margin-left: 6%; /*???--------------*/
+	margin-left: 6%;
 }
 .materiel{
 	padding-top: 0px;
@@ -337,15 +334,18 @@ ol li{
 	margin: auto;
 	font-size: 19px;
 }
+/*images côte à côte*/
 .IMGcours1{
 	width: 49%;
 	display: inline;
 }
+/*image seule*/
 .IMGcours{
 	width: 80%;
 	padding-bottom: 10px;
 	margin: auto;
 }
+/*image verticale*/
 .IMGcoursVert{
 	height: 600px;
 	display: block;

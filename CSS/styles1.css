@@ -1,12 +1,16 @@
 /*commun à toutes les pages*/
+/*dégradé*/
 html{
-	background: -webkit-linear-gradient(top, #00FFDD, black); /*Chrome, Safari*/
-	background: -o-linear-gradient(bottom, #00FFDD, black); /*Opera*/
-	background: -moz-linear-gradient(bottom, #00FFDD, black); /*Mozilla, Firefox*/
+	/*Chrome, Safari*/
+	background: -webkit-linear-gradient(top, #00FFDD, black); 
+	/*Opera*/
+	background: -o-linear-gradient(bottom, #00FFDD, black); 
+	/*Mozilla, Firefox*/
+	background: -moz-linear-gradient(bottom, #00FFDD, black); 
 	background: linear-gradient(to bottom, #00FFDD, black);
 	background-repeat: no-repeat;
 }
-
+/*boîte noire*/
 .contenu{
 	width:70%;
 	border-radius: 15px;
@@ -15,10 +19,8 @@ html{
 }
 
 body{
-	/*width:*/
 	padding: 0px;
-	/*border*/
-	margin: auto; /*top,right,bot,left OR top/bot,right/left*/
+	margin: auto;
 	color: white;
 }
 
@@ -35,7 +37,6 @@ h1{
 }
 /*autres titres*/
 h2{
-	/*padding-left: 40px;*/
 	padding-top: 50px;
 	font-size: 30px;
 	text-align: center;
@@ -51,19 +52,16 @@ h4{
 }
 /*textes*/
 p{
-	/*padding: 0px 20px 20px 20px;*/
 	width: 85%;
 	padding: 20px;
-	/*margin: 15px;*/
 	margin: auto;
 	font-size: 19px;
-	/*font-family: ;*/
 	line-height: 25px;
 }
 .centrertexte{
 	text-align: center;
 }
-
+/*bordure entre menu et contenu*/
 .border{
 	border-left: 1px dotted gray;
 	margin: auto auto auto 200px;
@@ -76,7 +74,6 @@ table{
 	margin: 20px auto auto auto;
 	border-collapse: collapse;
 }
-
 th, td{
 	padding: 8px;
 	border: 1px solid gray;
@@ -105,7 +102,6 @@ th, td{
 }
 
 /*barre menu*/
-/*to do: from side to top responsive design----------*/
 .menu{
 	position: absolute;
 	height: 100%;
@@ -113,15 +109,12 @@ th, td{
 	left: 15%;
 	list-style-type: none;
 	font-size: 16px;
-	/*font-family: ;*/
 }
 /*logo barre menu*/
 .logo-accueil{
 	width: 150px;
 }
-/*to do: animation->apparait 1 a 1-------------
- nouvelles options dans la barre menu----------
- accueil, histo, projet, annees, boutique----*/
+/*transition (options apparaissent)*/
 .menu-cours{
 	list-style-position: inside;
 	-webkit-padding-start: 23px;
@@ -228,7 +221,6 @@ footer{
 .newstext{
 	padding: 0px 0px 0px 10px;
 }
-/*to do: % but 200px max----------------------*/
 #img-defile{
 	width: 200px;
 	padding-top: 10px;

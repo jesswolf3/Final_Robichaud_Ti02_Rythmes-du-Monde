@@ -484,5 +484,70 @@ input[type="submit"]:hover{
 
 
 /*Responsive design*/
+
+#nav, label{
+	display: none;
+}
+
 @media screen and (max-width: 900px){
-	
+
+	label:after{
+  		content:'';
+  		display: block;
+  		width: 30px;
+  		height: 5px;
+  		background: #777;
+  		margin: 7px 5px;
+  		box-shadow: 0px 10px 0px #777, 0px 20px 0px #777
+	}
+
+	label {
+  		display: block;
+  		background: #222;
+		width: 40px;
+  		height: 40px;
+  		cursor: pointer;
+		position: absolute;
+		right: 20px;
+  		top: 0px;
+	}
+
+	[type="checkbox"]:checked ~ .menu{
+		display: block;
+  		z-index: 9999;
+  		position: absolute;
+		height:auto;
+		width:90%;
+		left:50%;
+		transform: translate(-50%, 0);
+		background-color: #000000;
+		text-align: center;
+		border-radius: 15px;
+		font-size:20px;
+	}
+
+
+	.logo-accueil{
+		margin: auto;
+	}
+
+	.menu li
+	{
+		padding:5px;
+		list-style: none;
+		margin:auto;
+	}
+	.menu li ul, .menu ul{
+		display:none;
+	}
+
+	.menu{
+		display: none;
+	}	
+	.border{
+		margin:auto;
+	}
+	.hautpage{
+		display: none;
+	}
+}

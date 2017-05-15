@@ -484,20 +484,17 @@ input[type="submit"]:hover{
 
 
 /*Responsive design*/
-
 #nav, #checkbox{
 	display: none;
 }
 
-@media screen and (max-height: 550px)
-{
+@media screen and (max-height: 550px){
 	.hautpage{
 		display: none;
 	}
 }
 
 @media screen and (max-width: 900px){
-
 	.contenu{
 		width:90%;
 	}
@@ -511,8 +508,7 @@ input[type="submit"]:hover{
   		margin: 7px 5px;
   		box-shadow: 0px 10px 0px #777, 0px 20px 0px #777
 	}
-
-	#checkbox {
+	#checkbox{
   		display: block;
   		background: #222;
 		width: 40px;
@@ -522,7 +518,6 @@ input[type="submit"]:hover{
 		right: 20px;
   		top: 0px;
 	}
-
 	[type="checkbox"]:checked ~ .menu{
 		display: block;
   		z-index: 9999;
@@ -537,11 +532,9 @@ input[type="submit"]:hover{
 		font-size:20px;
 	}
 
-
 	.logo-accueil{
 		margin: auto;
 	}
-
 	.menu li
 	{
 		padding:5px;

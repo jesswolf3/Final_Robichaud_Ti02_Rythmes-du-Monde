@@ -489,6 +489,13 @@ input[type="submit"]:hover{
 	display: none;
 }
 
+@media screen and (max-height: 550px)
+{
+	.hautpage{
+		display: none;
+	}
+}
+
 @media screen and (max-width: 900px){
 
 	#checkbox:after{

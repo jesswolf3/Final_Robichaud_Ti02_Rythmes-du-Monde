@@ -546,6 +546,7 @@ input[type="submit"]:hover{
 	}	
 	.border{
 		margin:auto;
+		border:none;
 	}
 	.hautpage{
 		display: none;

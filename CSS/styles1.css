@@ -498,6 +498,10 @@ input[type="submit"]:hover{
 
 @media screen and (max-width: 900px){
 
+	.contenu{
+		width:90%;
+	}
+
 	#checkbox:after{
   		content:'';
   		display: block;

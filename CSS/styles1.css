@@ -348,7 +348,8 @@ ol li{
 }
 /*image verticale*/
 .IMGcoursVert{
-	height: 600px;
+	min-width: 350px;
+	width: 47%;
 	display: block;
 	padding-bottom: 10px;
 	margin: auto;
@@ -492,7 +493,7 @@ input[type="submit"]:hover{
 	.contenu{
 		width:90%;
 	}
-
+	/*bouton menu*/
 	#checkbox:after{
   		content:'';
   		display: block;
@@ -547,5 +548,11 @@ input[type="submit"]:hover{
 	}
 	.hautpage{
 		display: none;
+	}
+	
+	.IMGcours1{
+		display: block;
+		width: 70%;
+		margin: auto auto 10px auto;
 	}
 }

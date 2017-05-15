@@ -485,13 +485,13 @@ input[type="submit"]:hover{
 
 /*Responsive design*/
 
-#nav, label{
+#nav, #checkbox{
 	display: none;
 }
 
 @media screen and (max-width: 900px){
 
-	label:after{
+	#checkbox:after{
   		content:'';
   		display: block;
   		width: 30px;
@@ -501,7 +501,7 @@ input[type="submit"]:hover{
   		box-shadow: 0px 10px 0px #777, 0px 20px 0px #777
 	}
 
-	label {
+	#checkbox {
   		display: block;
   		background: #222;
 		width: 40px;
